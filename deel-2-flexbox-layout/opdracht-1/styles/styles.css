@@ -1,1 +1,8 @@
-/*Schrijf hier jouw CSS*/
+/*======= uitwerking ===============*/
+
+/*CSS reset*/
+* { padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/*dit is een wijziging*/
