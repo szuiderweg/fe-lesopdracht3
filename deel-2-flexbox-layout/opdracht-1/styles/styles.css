@@ -1,8 +1,59 @@
 /*======= uitwerking ===============*/
 
-/*CSS reset*/
-* { padding:0;
-    margin:0;
+CSS reset
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-/*dit is een wijziging*/
+
+body {
+    border: 6px solid deeppink;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    flex-basis: 100px; /* header is a flex item of body*/
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;/*main is a flexitem of body and flex container itself */
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink:0;
+    overflow: auto;
+
+}
+
+/*set default width distribution of horizontal elements inside main to 60:20:20 */
+    article {
+        flex-basis: 60%;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    nav {
+        flex-basis: 20%;
+        flex-grow: 1;
+        flex-shrink:0;
+        order: 1;
+    }
+
+    aside {
+        flex-basis: 20%;
+        flex-grow: 1;
+        flex-shrink:0;
+    }
+
+footer {
+    flex-basis: 100px; /* footer is a flex item of body, size should be the same as the header*/
+    flex-grow: 0;
+    flex-shrink: 0;
+}
