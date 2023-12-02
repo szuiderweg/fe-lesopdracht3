@@ -1,14 +1,9 @@
 /*======= uitwerking ===============*/
 
-CSS reset
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 body {
-    border: 6px solid deeppink;
+
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,10 +19,10 @@ header {
 main {
     display: flex;
     flex-direction: row;/*main is a flexitem of body and flex container itself */
-    flex-basis: 200px;
+    flex-basis: 80vh;
     flex-grow: 1;
     flex-shrink:0;
-    overflow: auto;
+
 
 }
 
@@ -36,6 +31,7 @@ main {
         flex-basis: 60%;
         flex-grow: 1;
         flex-shrink: 1;
+        overflow: auto;
 
     }
 
