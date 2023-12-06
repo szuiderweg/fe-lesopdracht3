@@ -1,1 +1,48 @@
-/*Schrijf hier jouw CSS*/
+/*======= uitwerking ===============*/
+body {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-basis: 100px; /* header is a flex item of body*/
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;/*main is a flexitem of body and flex container itself */
+    flex-basis: 80vh;
+    flex-grow: 1;
+    flex-shrink:0;
+}
+
+/*set default width distribution of horizontal elements inside main to 60:20:20 */
+    article {
+        flex-basis: 60%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow: auto;
+    }
+
+    nav {
+        flex-basis: 20%;
+        flex-grow: 1;
+        flex-shrink:0;
+        order: 1;
+    }
+
+    aside {
+        flex-basis: 20%;
+        flex-grow: 1;
+        flex-shrink:0;
+    }
+
+footer {
+    flex-basis: 100px; /* footer is a flex item of body, size should be the same as the header*/
+    flex-grow: 0;
+    flex-shrink: 0;
+}
